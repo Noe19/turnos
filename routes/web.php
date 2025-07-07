@@ -18,7 +18,7 @@ Route::get('/users', function () {
     return view('user');
 })->name('users');
 
-Route::get('/list/{nombre}', function () {
+Route::get('/list', function () {
     return view('livewire.list-user');
 })->name('list-user');
 

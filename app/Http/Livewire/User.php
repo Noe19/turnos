@@ -34,6 +34,7 @@ class User extends Component
     {
         // Redirige a la ruta llamada 'list'
         return redirect()->route('list-user');
+       //
     }
 
     // separa % lo nombre

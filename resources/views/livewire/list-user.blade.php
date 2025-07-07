@@ -26,5 +26,5 @@
             </li>
         @endforeach
     </ul>
- 
+  <livewire:ticket-generator/>
 </div>

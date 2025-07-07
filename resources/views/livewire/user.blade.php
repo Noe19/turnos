@@ -2,7 +2,7 @@
     @if (!$showList)
         <button wire:click="mostrarLista">Ver lista de usuarios</button>
     @else
-        <livewire:list-user />
+       <livewire:list-user :users="$users" />
     @endif
     <div>
     <button wire:click="irALaLista">Ir a la lista</button>
