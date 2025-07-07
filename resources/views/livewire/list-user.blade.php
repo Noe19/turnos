@@ -15,4 +15,16 @@
     </table>
 
     <button wire:click="$emitUp('volverAUsers')">Volver</button>
+    <ul>
+        @foreach($users as $user)
+            <li>
+                @if(isset($user['route']))
+                    <a href="{{ $user['route'] }}">{{ $user['name'] }}</a>
+                @else
+                    {{ $user['name'] }}
+                @endif
+            </li>
+        @endforeach
+    </ul>
+ 
 </div>

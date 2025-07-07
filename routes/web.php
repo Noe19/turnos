@@ -18,9 +18,13 @@ Route::get('/users', function () {
     return view('user');
 })->name('users');
 
-Route::get('/list', function () {
+Route::get('/list/{nombre}', function () {
     return view('livewire.list-user');
 })->name('list-user');
 
-
+Route::get('/test-pdf', function () {
+    $usuario = 'Denisse Cumbal';
+    $cedula = '1721355061001';
+    return view('ticket', compact('usuario', 'cedula'));
+});
 //Route::get('/turnos', Turnos::class)->name('turnos');

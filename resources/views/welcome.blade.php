@@ -5,7 +5,8 @@
     @livewireStyles
 </head>
 <body>
-   <livewire:user />
+   <livewire:ticket-generator/>
+   <livewire:user/>
     @livewireScripts
 </body>
 </html>
