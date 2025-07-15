@@ -11,5 +11,7 @@
         <button type="submit" wire:click="textoEnviado()">enviar</button>
          <livewire:list-user :users="$users" />
          {{$formato}}
+
+         <livewire:ticket-generator />
        
 </div>

@@ -8,6 +8,7 @@
 <body>
 
    <livewire:user/>
+   
     @livewireScripts
     
 </body>
